@@ -20,6 +20,9 @@ const submitHandler = () => {
 };
 
 const calculateProfitAndLoss = (initial, quantity, current) => {
+  initial = Number(initial);
+  quantity = Number(quantity);
+  current = Number(current);
   if (initial > current) {
     var loss = (initial - current) * quantity;
     var lossPercentage = (loss / initial) * 100;
@@ -32,7 +35,7 @@ const calculateProfitAndLoss = (initial, quantity, current) => {
       `Hey the profit is ${profit} and the percent is ${profitPercentage}%`
     );
   } else {
-    showOutput("No pain No gain and no gains no pain");
+    showOutput("No pain No gain and No gain No pain");
   }
 };
 
