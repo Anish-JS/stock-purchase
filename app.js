@@ -19,15 +19,15 @@ const submitHandler = () => {
     );
 };
 
-const calculateProfitAndLoss = (intial, quantity, current) => {
-  if (intial > current) {
-    var loss = (intial - current) * quantity;
-    var lossPercentage = (loss / intial) * 100;
+const calculateProfitAndLoss = (initial, quantity, current) => {
+  if (initial > current) {
+    var loss = (initial - current) * quantity;
+    var lossPercentage = (loss / initial) * 100;
 
     showOutput(`Hey the loss is ${loss} and the percent is ${lossPercentage}%`);
-  } else if (intial < current) {
-    var profit = (current - intial) * quantity;
-    var profitPercentage = (profit / intial) * 100;
+  } else if (initial < current) {
+    var profit = (current - initial) * quantity;
+    var profitPercentage = (profit / initial) * 100;
     showOutput(
       `Hey the profit is ${profit} and the percent is ${profitPercentage}%`
     );
