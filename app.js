@@ -20,9 +20,9 @@ const submitHandler = () => {
 };
 
 const calculateProfitAndLoss = (initial, quantity, current) => {
-  const initial = Number(initial);
-  const quantity = Number(quantity);
-  const current = Number(current);
+  initial = Number(initial);
+  quantity = Number(quantity);
+  current = Number(current);
   if (initial > current) {
     const loss = (initial - current) * quantity;
     const lossPercentage = (loss / initial) * 100;
